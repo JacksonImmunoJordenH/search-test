@@ -6,8 +6,6 @@ var listFAQ = document.querySelectorAll(".faq-container");
 var noResult = document.querySelectorAll(".no-result-text");
 var valueTracker = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-console.log(listFAQ.innerText);
-
 userSearch.addEventListener("change", function () {
 
     var userSearchValue = userSearch.value.toLowerCase();
