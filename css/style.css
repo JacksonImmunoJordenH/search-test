@@ -1,0 +1,84 @@
+li {
+  list-style: none;
+}
+
+#select-drop {
+  margin-top: 2rem;
+}
+
+.search-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.faq-section-container {
+  background: #d4edfc;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+
+.faq-section-container h2 {
+  background: #009fe3;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+.faq-section-container a {
+  color: #406B85;
+  text-decoration: none;
+}
+
+.faq-section-container a:hover {
+  color: #719fba;
+  text-decoration: underline;
+}
+
+.info {
+  padding: 0px 10px;
+  border-bottom: 3px solid #fff;
+  line-height: 1.45em;
+}
+
+.info p {
+  font-size: 1rem;
+}
+
+.no-result-text {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.fa-map-marker-alt {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #009fe3;
+}
+
+.faq-list-space {
+  height: 1px;
+  width: 1.07rem;
+  display: inline-block;
+}
+
+.specific-application-faq {
+  margin-top: 1.5rem;
+}
+
+.specific-application-faq h2 {
+  margin: 0;
+}
+
+.faq-sub-container h2 {
+  border-top: 8px solid #fff;
+  background: #ed7004;
+  font-size: 1.3rem;
+  padding: 2px 10px;
+}
+
+.faq-sub-container:first-of-type h2 {
+  border-top: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f8fa80ab4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="search-container">
+        <input id="user-search" type="search">
+        <button>Search</button><br>
+
+        <select id="select-drop">
+            <option value="faq-section-container">View All Questions</option>
+            <option value="documentation-faq">Documentation Questions</option>
+            <option value="manufacturing-faq">Manufacturing Questions</option>
+            <option value="general-application-faq">General Application Questions</option>
+            <option value="antibody-structure-faq">Antibody Structure Questions</option>
+            <option value="jir-product-knowledge-faq">JIR Product Knowledge Questions</option>
+            <option value="specific-application-faq">Specific Application Questions</option>
+        </select>
+    </div>
+
+    <!-- <ul>
+        <li>England</li>
+        <li>France</li>
+        <li>Germany</li>
+        <li>Spain</li>
+        <li>Sweden</li>
+        <li>USA</li>
+    </ul> -->
+
+    <div class="faq-section-container documentation-faq">
+        <h2>Documentation Questions</h2>
+        <h3 class="no-result-text"></h3>
+        <div class="faq-container">
+            <div class="info">
+                <h3>Where do I find your ISO 9001:2015 certificate?</h3>
+                <div>
+                    <p>View or print from the <a href="#">ISO certification page</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Where do I find a GHS/SDS?</h3>
+                <div>
+                    <p>Go to the <a href="#">GHS/SDS search page</a> or download from the applicable product page</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Where do I find a product specification sheet?</h3>
+                <div>
+                    <p>Go to the <a href="#">specification sheet search page</a> or download from the applicable product page</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Do you provide a Certificate of Analysis (COA)?</h3>
+                <div>
+                    <p>No, the only supporting document provided is the Product Specification Sheet.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Are literature references available for your products?</h3>
+                <div>
+                    <p>Yes, each product page has an "images & references" section which displays product citations.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Do you provide animal health certificates?</h3>
+                <div>
+                    <p>Animal health certificates are available on request at <a href="#">help@jacksonimmuno.com</a>. Please inquire by product code number.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How do I request a paper catalog?</h3>
+                <div>
+                    <p>To receive a catalog in the mail, <a href="#">complete the request form</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Do you provide stability documentation for your products?</h3>
+                <div>
+                    <p>Yes, stability memos can be provided on request. Please send an email to <a href="#">Technical Service at help@jacksonimmuno.com</a></p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What is the date of manufacture of my product?</h3>
+                <div>
+                    <p>Customer Service can provide the date of manufacture for any specific lot number. Contact customer service at +44 1638 782616 or <a href="#">info@jacksonimmuno.com</a> for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section-container manufacturing-faq">
+        <h2>Manufacturing Questions</h2>
+        <h3 class="no-result-text"></h3>
+        <div class="faq-container">
+            <div class="info">
+                <h3>What is the date of manufacture of my product?</h3>
+                <div><p>Customer Service can provide the date of manufacture for any specific lot number. Contact customer service at +44 1638 782616 or <a href="#">info@jacksonimmuno.com</a> for more information.</p></div>
+            </div>
+            <div class="info">
+                <h3>How do you determine protein concentration?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch uses the Biuret assay to determine protein concentration.</p>
+                    <p>If protein concentration is obtained by using the mass extinction coefficient of 1.4 for a 1 mg/ml solution at OD280, the result will be 10-15% lower than the concentration obtained by the Biuret assay.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What is the molecular weight of my product?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch does not determine molecular weights by analytical methods. An approximate molecular weight of 160, 110 and 50 kDa can be used for whole lgG, F(ab')<sub>2</sub> and Fab fragment antibodies, respectively. To obtain an estimated molecular weight of any other product of interest, please contact <a href="#">Technical Service at help@jacksonimmuno.com</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Do you make custom antibodies?</h3>
+                <div>
+                    <p>For purchase of OEM products that have custom specifications (e.g. custom adsorptions, conjugations), please contact <a href="#">Technical Service at help@jacksonimmuno.com</a>. Jackson ImmunoResearch does not provide polyclonal or monoclonal antibody development or production services.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Are your products endotoxin-free?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch does not assay products for endotoxin content. For applications requiring low endotoxin consider using an endotoxin removal column, available from Thermo Fisher, Charles River Laboratories, and other suppliers.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Why is there a discrepancy regarding the protein concentration, volume of dH<sub>2</sub>O used to reconstitute the lyophilized powder, and the nominal fill size reported on the spec sheet?</h3>
+                <div>
+                    <p>For products that are sold by weight (mg), Jackson ImmunoResearch fills vials with slightly more product than the nominal mg amount ("Size" on the spec sheet). To calculate the actual product amount in vial, multiply the protein concentration indicated on the spec sheet by the volume of dH<sub>2</sub>O needed to rehydrate the lyophilized pellet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section-container general-application-faq">
+        <h2>General Application Questions</h2>
+        <h3 class="no-result-text"></h3>
+        <div class="faq-container">
+            <div class="info">
+                <h3>What are common causes of background?</h3>
+                <div>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; Background may be caused by the primary antibody. Perform a control experiment excluding the primary antibody to isolate the <span class="faq-list-space"></span> secondary antibody as the cause of background.</p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Improper blocking of the tissues or cells.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Cross-reactivity of the labeled secondary antibodies with endogenous immunoglobulins on the tissues or cells.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Inadequate washing.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Reactivity of the labeled secondary antibody with immunoglobulins in the diluent.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Not diluting the secondary antibodies far enough.</a></p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What are some causes of weak signal?</h3>
+                <div>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">There is insufficient antigen present and an amplification protocol may be needed.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Change from a more sensitive detection method to a less sensitive detection method.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">The primary antibody is diluted too far.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">Enzyme activity is inhibited</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">The secondary antibody does not recognize certain primary antibodies well.</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp; <a href="#">The secondary antibody cross-reacts with immunoglobulins in the diluent</a></p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What diluent is recommended for the secondary antibody?</h3>
+                <div>
+                    <p>The antibodies can be diluted in buffers such as PBS or TBS. A detergent such as Tween 20 (0.05% v/v) can be inluded to reduce non-specific binding. We recommend making the working dilution fresh on the day of use. Carrier proteins such as BSA or normal serum are not necessary, and in some cases can increase background staining due to protein-protein interactions</p>
+                    <p>Read more about diluents in our <a href="#">guide to blocking, controls and diluents</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What working dilutions are recommended for all products?</h3>
+                <div>
+                    <p>Go to the <a href="#">working dilutions page</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What blocking buffer is recommended?</h3>
+                <div>
+                    <p>For most applications, we recommend blocking with normal serum (5% v/v) from the same species as the host of the secondary antibody. Other commonly used reagents such as BSA and non-fat dry milk are suitable for some applications, but may increase background if the secondary antibody is directed against goat, sheep, or horse.</p>
+                    <p>Read more about blocking in our <a href="#">guide to blocking, controls and diluents</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What incubation time is recommended for the secondary antibody?</h3>
+                <div>
+                    <p>Incubation times of 30-60 minutes are recommended for surface interactions such as ELISA or Western blotting. For staining tissue, incubation times should be increased as necessary to allow for tissue penetration. Total wash time should be approximately equal to incubation time to allow unreacted antibody to diffuse out.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What permeabilization conditions are recommended for intracellular staining?</h3>
+                <div>
+                    <p>Some detergents that are commonly used for permeabilization are Triton X-100, saponin and Tween 20. The optimal concentration for the chosen detergent should be established empirically. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What substrates are compatible with enzyme-conjugated secondary antibodies?</h3>
+                <div>
+                    <p>There are many commercially available substrates for development of peroxidase or alkaline phosphatase signal, and they are all compatible with the corresponding Jackson ImmunoResearch enzyme conjugate.</p>
+                    <p><a href="#">More information about chromogenic substrates is available on our blog page.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section-container antibody-structure-faq">
+        <h2>Antibody Structure Questions</h2>
+        <h3 class="no-result-text"></h3>
+        <div class="faq-container">
+            <div class="info">
+                <h3>What is an antibody subclass?</h3>
+                <div>
+                    <p>Immunoglobulin classes (IgA, IgD, IgE, IgG, IgM in mammals) are defined by the structure of their heavy chains. Minor differences on heavy chains are found between subclasses of each class. Jackson ImmunoResearch offers polyclonal antibodies that are specific for <a href="#">mouse subclasses IgG1, IgG2a, IgG2b, IgG2c, and IgG3</a>. We also have antibodies that are specific for <a href="#">camelid subclasses IgG 2+3</a>. We currently do not have subclass-specific antibodies against other species. </p>
+                    <p>Download <a href="#">Immunoglobulin Structure and Function Poster.</a></p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What are the differences between Fab, Fc, and F(ab')<sub>2</sub> fragments?</h3>
+                <div>
+                    <p>These products are the result of <a href="#">proteolytic digestion of IgG</a>. Digestion with papain results in Fab and Fc fragments, and digestion with pepsin yields F(ab')<sub>2</sub> fragments.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What is an antibody isotype?</h3>
+                <div>
+                    <p>Isotypes are distinct forms of antibody heavy and light chains, and may refer to class or subclass. Light chain isotypes are kappa and lambda, and heavy chain isotypes are alpha (IgA), delta (IgD), epsilon (IgE), gamma (IgG), mu (IgM). The heavy chains may be further differentiated as subclasses, e.g. gamma 1 (IgG1). </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What is an isotype control?</h3>
+                <div>
+                    <p>Isotypes are distinct forms of antibody heavy and light chains, and may refer to class or subclass. Light chain isotypes are kappa and lambda, and heavy chain isotypes are alpha (IgA), delta (IgD), epsilon (IgE), gamma (IgG), mu (IgM). The heavy chains may be further differentiated as subclasses, e.g. gamma 1 (IgG1). </p>
+                    <p>An isotype control is a negative control that verifies specific binding of either a primary or secondary antibody. The isotype control is the same class or subclass as the experimental antibody, but is not specific for the antigenic target. <a href="#">Isotype controls may be purified IgG from normal serum</a> of the species host of the experimental antibody; or in the case of monoclonal antibodies may be monoclonals of the same subclass, directed against an irrelevant antigen. Isotype controls for unlabeled antibodies are unlabeled, and controls for labeled antibodies are labeled with the same reporter molecule (fluorophore, enzyme, or biotin) as the experimental antibody. </p>
+                    <p>Read more about isotype controls in our <a href="#">guide to blocking, controls and diluents.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section-container jir-product-knowledge-faq">
+        <h2>Jackson ImmunoResearch Product Knowledge Questions</h2>
+        <h3 class="no-result-text"></h3>
+        <div class="faq-container">
+            <div class="info">
+                <h3>How do I choose the correct secondary antibody?</h3>
+                <div>
+                    <p>There are many factors that can influence secondary antibody selection. <a href="#">Read our guidelines to a systematic approach</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How do I choose a fluorescent probe?</h3>
+                <div>
+                    <p>Choice of <a href="#">fluorescent probes</a> depends on instrumentation capabilities, <a href="#">multiple labeling considerations</a>, and brightness required. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What does (H+L) stand for?</h3>
+                <div>
+                    <p>Products described as Anti-IgG (H+L) contain antibodies that recognize epitopes on both the heavy and light (H+L) chains of IgG. See our <a href="#">guidelines for secondary antibody selection.</a> </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What does "ML" multiple labeling mean?</h3>
+                <div>
+                    <p>Some antibodies are designated "<strong>ML</strong>" to emphasize their usefulness in multiple labeling, in addition to single labeling. For further information see <a href="#">Multiple Labeling (ML) Using Labeled Secondary Antibodies</a>.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What does "min X" mean?</h3>
+                <div>
+                    <p>Antibodies with "<a href="#">(min X ... Sr Prot)</a>" in the description have been tested and/or adsorbed against IgG and/or serum proteins of those species indicated in the parentheses. These products are recommended for reducing tissue background and for multiple labeling primary antibodies raised in different host animals. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What buffers are used to package your products?</h3>
+                <div>
+                    <p>Most Jackson ImmunoResearch products are provided in 10 mM PO4, 0.25 M NaCl, pH 7.6. Conjugated products may include sodium azide and/or BSA stabilizer. For lot-specific information, consult the <a href="#">Product Specification Sheet</a> for a particular product. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How long is the spacer between Biotin-SP and the antibody?</h3>
+                <div>
+                    <p>There is a <a href="#">6-atom spacer</a> positioned between biotin and the protein to which it is conjugated.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How do I aliquot my antibody?</h3>
+                <div>
+                    <p>Aliquot in amounts that are convenient for the intended application. Aliquots stored at -70⁰C should not be subjected to multiple freeze-thaw cycles, so small volumes are recommended. Products stored as liquids (at 4⁰C, or stored at -20⁰C in 50% glycerol) can be aliquoted in multiple-use volumes. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How do I block endogenous Fc receptors?</h3>
+                <div>
+                    <p>To block whole IgG primary and secondary antibodies from binding to Fc receptors, incubate cells in buffer containing 5% normal serum from the host species of the secondary antibody. To prevent capping, endocytosis, and regeneration of Fc receptors on <i>living</i> cells, incubate at 4°C in buffer containing 5% normal serum with sodium azide added to inhibit metabolism. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How do I block endogenous immunoglobulins?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch offers monovalent Fab fragments of secondary antibodies that can be used to <a href="#">block endogenous immunoglobulins</a>, obscuring them from labeled secondary antibodies used in subsequent steps. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How can I double label two primary antibodies from the same host species?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch provides several strategies for accomplishing this labeling, all of which involve monovalent Fab fragments. Multiple protocol examples are available for <a href="#">sequentially labeling primary and secondary antibodies</a>. Alternatively, primary antibodies can be labeled in solution with <a href="#">Fab fragment anti-Fc secondary antibodies</a> prior to incubation. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Do your antibodies recognize denatured, folded or both types of epitopes?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch’s polyclonal secondary antibodies are routinely tested against native proteins that exhibit folded epitopes. In addition, we frequently probe Western blots of denatured and reduced immunoglobulins and find the secondary antibodies have good reactivity to these proteins. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How should products be stored after receiving but before opening?</h3>
+                <div>
+                    <p>Products ship at ambient temperature. On receipt, they should be stored according to recommendations on the Product Specification Sheet, typically at 4⁰C. Store liquid colloidal gold complexes at -20⁰C. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>What is the shelf life of a freeze-dried product before opening?</h3>
+                <div>
+                    <p>Freeze-dried product is stable indefinitely when stored in the original vial at 4⁰C. If you require an expiration date, please contact <a href="#">help@jacksonimmuno.com</a> and request a copy of our Stability Memo.</p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>How should the products be stored after opening?</h3>
+                <div>
+                    <p>Refer to the product specification sheet or find your product on the <a href="#">storage recommendations page</a>. </p>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Where can I find your mouse lines?</h3>
+                <div>
+                    <p>Jackson ImmunoResearch Laboratories provides secondary antibodies. We are not affiliated with <a href="#">The Jackson Laboratory</a> that specializes in mice. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section-container specific-application-faq">
+        <h2>Specific Application Questions</h2>
+        <div>
+            <div class="faq-sub-container">
+                <h2>Western Blot</h2>
+                <h3 class="no-result-text"></h3>
+                <div class="faq-container">
+                    <div class="info">
+                        <h3>How can I avoid detection if the <strong>heavy chain</strong> of an immunoprecipitating (IP) antibody?</h3>
+                        <div>
+                            <p>Jackson ImmunoResearch provides <a href="#">anti-IgG, light chain specific antibodies</a> to avoid detection of the IP antibody’s heavy chain (50 kDa). </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>How can I avoid detection if the <strong>light chain</strong> of an immunoprecipitating (IP) antibody?</h3>
+                        <div>
+                            <p>Anti-IgG, Fc fragment specific antibodies can be used to avoid detection of IP antibody’s light chain (25 kDa). However, sample reduction typically results in a small amount of degraded heavy chain at 25 kDa, and <a href="#">signal from these fragments must be blocked using FabuLight™ antibodies</a>. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-sub-container">
+                <h2>Elisa</h2>
+                <h3 class="no-result-text"></h3>
+                <div class="faq-container">
+                    <div class="info">
+                        <h3>What are recommended coating conditions?</h3>
+                        <div>
+                            <p>To ensure thorough coating, we suggest using 10 ug/ml protein in a high pH buffer such as 0.1 M Na<sub>2</sub>CO<sub>3</sub>/NaHCO<sub>3</sub>, pH 9.6. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-sub-container">
+                <h2>Immunohisto/cytochemistry (IHC/ICC)</h2>
+                <h3 class="no-result-text"></h3>
+                <div class="faq-container">
+                    <div class="info">
+                        <h3>What reagents are needed to visualize primaries raised in mouse on mouse tissues/cells?</h3>
+                        <div>
+                            <p>In mouse on mouse staining, unwanted signal from <a href="#">endogenous immunoglobulins</a> can be blocked using monovalent Fab fragments. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>What reagents can be used to improve photostabilty of the fluorescent probes?</h3>
+                        <div>
+                            <p>There are many commercially available mounting media that contain anti-fading reagents. Laboratories can also prepare anti-fade <a href="#">mounting media containing n-propyl gallate</a> in-house. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>What precaution should be considered in choosing a mounting medium for Cy2?</h3>
+                        <div>
+                            <p><a href="#">Cy2 is incompatible with p-phenylenediamine</a>, an anti-fading reagent that is found in some commercial mounting media such as Vectashield. Assure that p-phenylenediamine is not present in Cy2 mounting media. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>What fluorophores are most stable in permanent mounting media?</h3>
+                        <div>
+                            <p><a href="#">Cyanine dyes</a> have been shown to exhibit superior brightness and photostability in the non-polar environment of plastic mounting media.  </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>What should be considered in selecting fluorophores for multple labeling protocols?</h3>
+                        <div>
+                            <p>To select fluorophores for multiple labeling, review instrument capabilities (available excitation wavelengths and emission filters). Narrow band-pass filters help separate signal from fluorophores that have overlapping emission spectra. Online tools are available to help choose <a href="#">fluorescent dye panels</a> and match them with suitable filters.</p>
+                            <p>Successful <a href="#">multiple labeling</a> also requires the use of secondary antibodies that don’t cross-react with each other, the wrong primary antibody, or endogenous tissue immunoglobulins. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-sub-container">
+                <h2>Flow Cytometry</h2>
+                <h3 class="no-result-text"></h3>
+                <div class="faq-container">
+                    <div class="info">
+                        <h3>Which secondary antibody format should I choose for flow cytometry?</h3>
+                        <div>
+                            <p>Using polyclonal secondary antibody-conjugates in immunoassays often provides enhanced signal compared to directly conjugated primary antibodies, due to multiple secondaries binding per individual primary. </p>
+                            <p>F(ab')<sub>2</sub> antibodies are ideal in flow cytometry analyses where the presence of Fc receptors may lead to background due to their binding of Fc domain in a whole IgG antibody. The binding properties of F(ab')<sub>2</sub> antibodies are identical to those of the whole molecule. </p>
+                            <p>For complex labeling panels where mixing pre-labeled primary antibodies in a single cocktail is desired, <a href="#">FabuLights™</a> (monovalent Fab anti-Fc antibodies) are well suited. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>Which reagents are needed to visualize primaries raised in mouse on mouse cells?</h3>
+                        <div>
+                            <p>Using a directly labeled primary antibody is the best way to avoid detection of endogenous immunoglobulin when the primary antibody is from the same species as the experimental sample.</p>
+                            <p>Unwanted signal from <a href="#">endogenous immunoglobulins</a> can be blocked using monovalent Fab fragments if a secondary antibody is needed for detection. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>What is an isotype control, and how is it used?</h3>
+                        <div>
+                            <p>An isotype control is a negative control that verifies specific binding of either a primary or secondary antibody. The isotype control is the same class or subclass as the experimental antibody, but is not specific for the antigenic target. <a href="#">Isotype controls may be purified from normal serum</a> of the species host of the experimental antibody; or in the case of monoclonal antibodies may be monoclonals of the same subclass, directed against an irrelevant antigen. Isotype controls for unlabeled antibodies are unlabeled, and controls for labeled antibodies are labeled with the same reporter molecule (fluorophore or biotin) as the experimental antibody.</p>
+                            <p><a href="#">Read more about isotype controls in flow cytometry</a></p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>What should be considered in selecting a fluorescent probe?</h3>
+                        <div>
+                            <p>To select fluorophores for flow cytometry, review the fluorescent channels available on the instrument. Online tools are convenient for helping choose <a href="#">fluorescent dye panels</a>. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-sub-container">
+                <h2>Electron Microscopy</h2>
+                <h3 class="no-result-text"></h3>
+                <div class="faq-container">
+                    <div class="info">
+                        <h3>What size gold particles are recommended for various applications?</h3>
+                        <div>
+                            <p>Jackson ImmunoResearch provides immunogold complexes in 4, 6, 12 and 18 nm sizes. For many applications, the particle size is not critical, and the reagents can be interchanged.</p>
+                            <p>The 6, 12 and 18 nm sizes are recommended for multiple labeling protocols in transmission (TEM) and scanning (SEM) electron microscopy. These complexes have been subjected to density gradients to ensure uniformity of particle size. The 4 nm size can be used for single labeling in electron microscopy, but may contain non-uniform particles. </p>
+                            <p>The 4 nm immunogold complexes offer the best tissue penetration and often are preferred for light microscopy (LM). The large sizes may also be suitable for LM. All immunogold reagents require silver enhancement for LM. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>How should collodial gold complexes be stored?</h3>
+                        <div>
+                            <p>Store liquid colloidal gold complexes (6, 12 and 18 nm) at -20⁰C. Store lyophilize gold complexes (4 nm) at 4⁰C until they have been rehydrated. </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>When should silver enhancement be included in a protocol?</h3>
+                        <div>
+                            <p>Silver enhancement is required to observe immunogold staining using light microscopy. Follow our <a href="#">protocol for silver enhancement</a>, or use commercially available reagents. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>
