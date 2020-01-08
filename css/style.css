@@ -406,9 +406,14 @@ li {
 }
 
 .no-result-text,
-.spec-app-no-result {
+.spec-app-no-result,
+.spec-no-result {
   padding-left: 10px;
   padding-bottom: 10px;
+  display: none;
+}
+
+.spec-app-header {
   display: none;
 }
 
